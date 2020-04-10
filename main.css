@@ -39,8 +39,10 @@ header {
     /*Properties*/
     background-color: var(--solarized-base02);
     position: relative;
+    left: 5%;
     border-radius: 25px;
-    width: auto;
+    width: 90%;
+    height: auto;
 
     /*Content*/
     color: var(--solarized-base1);
@@ -50,7 +52,7 @@ header {
 footer {
     /*Properties*/
     background-color: var(--solarized-base02);
-    opacity: 0.8;
+    opacity: 0.6;
 
     position: fixed;
     left: 0px;
@@ -73,8 +75,14 @@ section {
     /*Properties*/
     background-color: var(--solarized-base02);
     position: relative;
+    left: 7%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     border-radius: 25px;
-    width: auto;
+
+    width: 86%;
     text-align: center;
 
     /*Content*/
@@ -92,6 +100,10 @@ article {
     color: var(--solarized-base1);
 }
 
+p {
+    /*TODO*/
+}
+
 /*Links*/
 a, a:link {
     color: var(--solarized-blue);
@@ -106,6 +118,8 @@ a:hover, a:active {
 /*By ID*/
 #portrait {
     /*Properties*/
+    /*margin-top: 10px;*/
+
     width: 128px;
     height: 128px;
     border-radius: 50%;

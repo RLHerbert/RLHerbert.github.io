@@ -87,11 +87,11 @@ article {
 
 /*Links*/
 a, a:link {
-    color: var(--solarized-cyan);
+    color: var(--solarized-blue);
 }
 
 a:hover, a:active {
-    color: var(--solarized-blue);
+    color: var(--solarized-cyan);
 }
 
 /*By Class*/

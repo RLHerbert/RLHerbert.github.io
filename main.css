@@ -50,16 +50,23 @@ header {
 footer {
     /*Properties*/
     background-color: var(--solarized-base02);
+    opacity: 0.8;
+
     position: fixed;
     left: 0px;
     bottom: 0px;
     border-radius: 5px;
+    
     width: 100%;
     height: auto;
 
     /*Content*/
     color: var(--solarized-base1);
     text-align: center;
+}
+
+footer:hover {
+    opacity: 1;
 }
 
 section {

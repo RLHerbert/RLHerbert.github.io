@@ -1,3 +1,4 @@
+/*Root*/
 :root{
     /*
     Using the Solarized color pallete. 
@@ -24,6 +25,7 @@
     /*--default-text-color: #eee8d5;*/
 }
 
+/*By Tag*/
 body {
     /*Properties*/
     background-color: var(--solarized-base03);
@@ -90,4 +92,16 @@ a, a:link {
 
 a:hover, a:active {
     color: var(--solarized-blue);
+}
+
+/*By Class*/
+
+/*By ID*/
+#portrait {
+    /*Properties*/
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+
+    /*Content*/
 }

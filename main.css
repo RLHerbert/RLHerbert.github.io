@@ -1,0 +1,7 @@
+:root{
+    --solarized-brblack: #002b36;
+}
+
+body {
+    background-color: var(--solarized-brblack);
+}

@@ -23,8 +23,12 @@
 }
 
 body {
+    /*Properties*/
     background-color: var(--solarized-base03);
+
+    /*Content*/
     color: var(--solarized-yellow);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -41,10 +45,14 @@ header {
 footer {
     /*Properties*/
     background-color: var(--solarized-base02);
-    position: relative;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
     border-radius: 5px;
-    width: auto;
+    width: 100%;
+    height: auto;
 
+    /*Content*/
     text-align: center;
 }
 
@@ -55,6 +63,8 @@ section {
     border-radius: 25px;
     width: auto;
     text-align: center;
+
+    /*Content*/
 }
 
 article {
@@ -63,26 +73,15 @@ article {
     position: relative;
     width: auto;
     text-align: center;
+
+    /*Content*/
 }
 
 /*Links*/
-a {
+a, a:link {
     color: var(--solarized-cyan);
 }
 
-a:link {
-    color: var(--solarized-cyan);
-}
-
-/*Unnecessary*/
-a:visited {
+a:hover, a:active {
     color: var(--solarized-blue);
-}
-
-a:hover {
-    color: var(--solarized-magenta);
-}
-
-a:active {
-    color: var(--solarized-magenta);
 }

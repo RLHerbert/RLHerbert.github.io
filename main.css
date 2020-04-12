@@ -106,21 +106,30 @@ p {
 }
 
 ul.blockList {
+    position: relative;
+    display: flex;
     list-style-type: none;
     overflow: hidden;
+    z-index: 1;
 
     background-color: var(--solarized-base02);
 }
 
+/* COOOOOL
+ul.blockList:hover li.blockLink a {
+    height: 50px;
+}
+*/
+
 li.blockLink {
     float: left;
-    z-index: 2;
+    z-index: 3;
 }
 
 li.blockLink a {
     display: block;
     padding: 6px 12px;
-    z-index: 3;
+    z-index: 4;
 
     background-color: var(--solarized-base03);
     color: var(--solarized-base02);
@@ -129,11 +138,12 @@ li.blockLink a {
 }
 
 li.blockLink a:hover {
+    /*Invert the colors to make use of negative space*/
     background-color: var(--solarized-base02);
     color: var(--solarized-base03);
 }
 
-/*Links*/
+/*Default Links*/
 a, a:link {
     color: var(--solarized-blue);
 }

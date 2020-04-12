@@ -51,13 +51,13 @@ header {
 
 footer {
     /*Properties*/
-    background-color: var(--solarized-base02);
-    opacity: 0.6;
+    /*background-color: var(--solarized-base02);*/
+    opacity: 1;
 
     position: fixed;
     left: 0px;
     bottom: 0px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     
     width: 100%;
     height: auto;
@@ -102,6 +102,33 @@ article {
 
 p {
     /*TODO*/
+    position: relative;
+}
+
+ul.blockList {
+    list-style-type: none;
+    overflow: hidden;
+
+    background-color: var(--solarized-base02);
+}
+
+li.blockLink {
+    float: left;
+}
+
+li.blockLink a {
+    display: block;
+    padding: 6px 12px;
+
+    background-color: var(--solarized-base03);
+    color: var(--solarized-base02);
+
+    text-decoration: none;
+}
+
+li.blockLink a:hover {
+    background-color: var(--solarized-base02);
+    color: var(--solarized-base03);
 }
 
 /*Links*/

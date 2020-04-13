@@ -35,6 +35,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.preload * {
+    transition: none !important;
+}
+
 header {
     /*Properties*/
     background-color: var(--solarized-base02);
@@ -47,6 +51,17 @@ header {
     /*Content*/
     color: var(--solarized-base1);
     text-align: center;
+
+    /*Figure out fix for freaking out on page load*/
+    transition: 0.5s;
+}
+
+header:hover {
+    width: 92%;
+    /*transform: rotate(180deg);*/
+    left: 4%;
+
+    transition: .5s;
 }
 
 footer {
@@ -135,6 +150,8 @@ li.blockLink a {
     color: var(--solarized-base02);
 
     text-decoration: none;
+
+    transition: 0.5s;
 }
 
 li.blockLink a:hover {

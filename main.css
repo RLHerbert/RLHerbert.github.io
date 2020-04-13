@@ -36,6 +36,10 @@ body {
 }
 
 .preload * {
+    /*
+    Workaround for elements with transition popping in on page load
+    source: https://css-tricks.com/transitions-only-after-page-load/
+    */
     transition: none !important;
 }
 
@@ -47,6 +51,7 @@ header {
     border-radius: 25px;
     width: 90%;
     height: auto;
+    margin-bottom: 1%;
 
     /*Content*/
     color: var(--solarized-base1);
@@ -80,6 +85,9 @@ footer {
     /*Content*/
     color: var(--solarized-base1);
     text-align: center;
+
+    /*Effects*/
+    transition: 0.5s;
 }
 
 footer:hover {
@@ -122,8 +130,9 @@ p {
 
 ul.blockList {
     position: relative;
-    display: flex;
+    /*display: flex;*/
     list-style-type: none;
+    justify-content: right;
     overflow: hidden;
     z-index: 1;
 
@@ -137,13 +146,21 @@ ul.blockList:hover li.blockLink a {
 */
 
 li.blockLink {
-    float: left;
+    float: right;
     z-index: 3;
+}
+
+li.blockLink:first-child {
+    /*
+    TIL: Even though the last element in the HTML is the one on
+    the right, the css thinks that it's the first element.
+    */
+    padding-right: 5%;
 }
 
 li.blockLink a {
     display: block;
-    padding: 6px 12px;
+    padding: 4px 12px;
     z-index: 4;
 
     background-color: var(--solarized-base03);

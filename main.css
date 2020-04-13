@@ -154,6 +154,8 @@ li.blockLink:first-child {
     /*
     TIL: Even though the last element in the HTML is the one on
     the right, the css thinks that it's the first element.
+
+    ACTUALLY: The first <li> get's to float right first
     */
     padding-right: 5%;
 }

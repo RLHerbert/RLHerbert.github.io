@@ -22,17 +22,21 @@
     --solarized-cyan: #2aa198;
     --solarized-green: #859900;
 
-    /*--default-text-color: #eee8d5;*/
+    --page-body-background: var(--solarized-base3);
+    --page-area-background: var(--solarized-base2);
+    --page-font-color: var(--solarized-base01);
 }
 
 /*By Tag*/
 body {
     /*Properties*/
-    background-color: var(--solarized-base03);
+    background-color: var(--page-body-background);
 
     /*Content*/
     color: var(--solarized-base0);
     font-family: Arial, Helvetica, sans-serif;
+
+    transition: 1.5s;
 }
 
 .preload * {
@@ -45,7 +49,7 @@ body {
 
 header {
     /*Properties*/
-    background-color: var(--solarized-base02);
+    background-color: var(--page-area-background);
     position: relative;
     left: 5%;
     border-radius: 25px;
@@ -54,7 +58,7 @@ header {
     margin-bottom: 1%;
 
     /*Content*/
-    color: var(--solarized-base1);
+    color: var(--page-font-color);
     text-align: center;
 
     /*Figure out fix for freaking out on page load*/
@@ -83,7 +87,7 @@ footer {
     height: auto;
 
     /*Content*/
-    color: var(--solarized-base1);
+    color: var(--page-font-color);
     text-align: center;
 
     /*Effects*/
@@ -96,7 +100,7 @@ footer:hover {
 
 section {
     /*Properties*/
-    background-color: var(--solarized-base02);
+    background-color: var(--page-area-background);
     position: relative;
     left: 7%;
 
@@ -109,18 +113,18 @@ section {
     text-align: center;
 
     /*Content*/
-    color: var(--solarized-base1);
+    color: var(--page-font-color);
 }
 
 article {
     /*Properties*/
-    background-color: var(--solarized-base02);
+    background-color: var(--page-area-background);
     position: relative;
     width: auto;
     text-align: center;
 
     /*Content*/
-    color: var(--solarized-base1);
+    color: var(--page-font-color);
 }
 
 p {
@@ -136,7 +140,7 @@ ul.blockList {
     overflow: hidden;
     z-index: 1;
 
-    background-color: var(--solarized-base02);
+    background-color: var(--page-area-background);
 }
 
 /* COOOOOL
@@ -165,8 +169,8 @@ li.blockLink a {
     padding: 4px 12px;
     z-index: 4;
 
-    background-color: var(--solarized-base03);
-    color: var(--solarized-base02);
+    background-color: var(--page-body-background);
+    color: var(--page-area-background);
 
     text-decoration: none;
 
@@ -175,8 +179,8 @@ li.blockLink a {
 
 li.blockLink a:hover {
     /*Invert the colors to make use of negative space*/
-    background-color: var(--solarized-base02);
-    color: var(--solarized-base03);
+    background-color: var(--page-area-background);
+    color: var(--page-body-background);
 }
 
 /*Default Links*/
@@ -200,4 +204,17 @@ a:hover, a:active {
     border-radius: 50%;
 
     /*Content*/
+}
+
+#darkMode {
+    max-width: 40px;
+    max-height: 40px;
+
+    fill: var(--page-body-background);
+
+    transition: 0.5s ease;
+}
+
+#darkMode:hover {
+    fill: var(--solarized-base03);
 }

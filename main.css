@@ -22,10 +22,34 @@
     --solarized-cyan: #2aa198;
     --solarized-green: #859900;
 
-    --page-body-background: var(--solarized-base3);
-    --page-area-background: var(--solarized-base2);
-    --page-font-color: var(--solarized-base01);
+    --page-body-background: var(--solarized-base03);
+    --page-area-background: var(--solarized-base02);
+    --page-font-color: var(--solarized-base1);
+    --page-body-inverse: var(--solarized-base3);
 }
+
+.preLoad {
+    /*
+    Workaround for elements with transition popping in on page load
+    source: https://css-tricks.com/transitions-only-after-page-load/
+    */
+    transition: none;
+}
+
+.postLoad {
+    transition: 1s;
+}
+
+
+.preLoad * {
+    opacity: 0;
+}
+
+.postLoad * {
+    opacity: 1;
+    transition: 1s;
+}
+
 
 /*By Tag*/
 body {
@@ -35,17 +59,8 @@ body {
     /*Content*/
     color: var(--solarized-base0);
     font-family: Arial, Helvetica, sans-serif;
-
-    transition: 1.5s;
 }
 
-.preload * {
-    /*
-    Workaround for elements with transition popping in on page load
-    source: https://css-tricks.com/transitions-only-after-page-load/
-    */
-    transition: none !important;
-}
 
 header {
     /*Properties*/
@@ -62,7 +77,7 @@ header {
     text-align: center;
 
     /*Figure out fix for freaking out on page load*/
-    transition: 0.5s;
+    /*transition: 0.5s;/
 }
 
 header:hover {
@@ -70,7 +85,7 @@ header:hover {
     /*transform: rotate(180deg);*/
     left: 4%;
 
-    transition: .5s;
+    /*transition: .5s;*/
 }
 
 footer {
@@ -91,7 +106,7 @@ footer {
     text-align: center;
 
     /*Effects*/
-    transition: 0.5s;
+    /*transition: 0.5s;*/
 }
 
 footer:hover {
@@ -174,7 +189,7 @@ li.blockLink a {
 
     text-decoration: none;
 
-    transition: 0.5s;
+    /*transition: 0.5s;*/
 }
 
 li.blockLink a:hover {
@@ -212,9 +227,10 @@ a:hover, a:active {
 
     fill: var(--page-body-background);
 
-    transition: 0.5s ease;
+    /*transition: 0.5s ease;*/
 }
 
 #darkMode:hover {
-    fill: var(--solarized-base03);
+    fill: var(--page-body-inverse);
+    transition: .2s;
 }

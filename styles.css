@@ -19,7 +19,6 @@ body {
 
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     /*  */
     width: 100vw;
@@ -79,6 +78,9 @@ article {
 }
 
 @media (orientation: landscape) {
+    #bg_foreground {
+        align-items: center;
+    }
     article {
         height: 90vh;
     }  

@@ -7,7 +7,7 @@ body {
     
     /* background adapted from SVGBackgrounds.com */
     background-image: url("Media/Images/bg_stars.svg");
-    background-size: 360px 360px;
+    /* background-size: 360px 360px; */
 
     /*Content*/
     font-family: Arial, Helvetica, sans-serif;

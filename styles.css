@@ -47,7 +47,7 @@ nav {
     align-items: center; */
     margin-left: 10px;
     
-    height: 86vh;
+    /* height: 86vh; */
     width: 5vw;
     /* top: 5vh; */
     max-width: 120px;
@@ -65,7 +65,7 @@ article {
     display: flex;
     flex-direction: column;
 
-    height: 86vh;
+    /* height: 86vh; */
     width: 80vw;
     /* top: 5vh; */
     max-width: 800px;
@@ -76,6 +76,25 @@ article {
     /* opacity: 0.8; */
 
     overflow: hidden;
+}
+
+@media (orientation: landscape) {
+    article {
+        height: 90vh;
+    }  
+    nav {
+        height: 90vh;
+    }
+}
+  
+  @media (orientation: portrait) {
+    article {
+        height: 80vh;
+
+    }  
+    nav {
+        height: 80vh;
+    }
 }
 
 section {

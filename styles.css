@@ -5,6 +5,7 @@ body {
     align-content: center;
     justify-content: center;
     
+    background-color: #101217;
     /* background adapted from SVGBackgrounds.com */
     background-image: url("Media/Images/bg_stars.svg");
     /* background-size: 360px 360px; */

@@ -1,40 +1,24 @@
-var darkMode = "darkMode";
+let about = document.getElementById("about");
+let projects = document.getElementById("projects");
+let teaching = document.getElementById("teaching");
+let other = document.getElementById("other");
 
-function setDarkMode() {
-    if (window.localStorage.getItem(darkMode)=="dark") {
-        document.documentElement.style.setProperty('--page-body-background','#002b36');
-        document.documentElement.style.setProperty('--page-area-background', '#073642');
-        document.documentElement.style.setProperty('--page-font-color', '#93a1a1');
-        document.documentElement.style.setProperty('--page-body-inverse', 'var(--solarized-base3)')
-    }
-    else {
-        document.documentElement.style.setProperty('--page-body-background','#fdf6e3');
-        document.documentElement.style.setProperty('--page-area-background', '#eee8d5');
-        document.documentElement.style.setProperty('--page-font-color', '#586e75');
-        document.documentElement.style.setProperty('--page-body-inverse', 'var(--solarized-base03)')
-    }
+let articles = [about, projects, teaching, other];
+
+window.onload(show_article("about"));
+
+function hide_articles() {
+  for (i = 0; i < articles.length; i++) {
+    articles[i].style.opacity = "0.0";
+    articles[i].style.width = "0px";
+  }
 }
 
-function setDarkModeStorage() {
-    //Toggles the darkMode localStorage and sets it to dark if it doesn't exist
+function show_article(article_name) {
+  //console.log("Showing article: " + article_name);
+  hide_articles();
 
-    if (window.localStorage.getItem(darkMode)=="light") {
-        window.localStorage.setItem(darkMode,"dark")
-    }
-    else {
-        window.localStorage.setItem(darkMode,"light")
-    }
-}
-
-function darkModeToggle() {
-    setDarkModeStorage(); //Toggle the dark mode
-    setDarkMode();
-}
-
-function pageLoad() {
-    setDarkMode();
-
-    var body = document.getElementById("body");
-    body.classList.remove("preLoad");
-    body.classList.add("postLoad");
+  let article = document.getElementById(article_name);
+  article.style.opacity = "1.0";
+  article.style.width = "90%";
 }

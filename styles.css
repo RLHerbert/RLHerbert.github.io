@@ -47,7 +47,7 @@ nav {
     align-items: center; */
     margin-left: 10px;
     
-    height: 90vh;
+    height: 86vh;
     width: 5vw;
     /* top: 5vh; */
     max-width: 120px;
@@ -65,7 +65,7 @@ article {
     display: flex;
     flex-direction: column;
 
-    height: 90vh;
+    height: 86vh;
     width: 80vw;
     /* top: 5vh; */
     max-width: 800px;

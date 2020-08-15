@@ -10,7 +10,7 @@ window.onload(show_article("about"));
 function hide_articles() {
   for (i = 0; i < articles.length; i++) {
     articles[i].style.opacity = "0.0";
-    articles[i].style.width = "0px";
+    articles[i].style.height = "0px";
   }
 }
 
@@ -20,5 +20,5 @@ function show_article(article_name) {
 
   let article = document.getElementById(article_name);
   article.style.opacity = "1.0";
-  article.style.width = "90%";
+  article.style.height = "100%";
 }

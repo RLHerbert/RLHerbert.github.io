@@ -1,11 +1,12 @@
+let container = document.getElementById("container");
 let about = document.getElementById("about");
 let projects = document.getElementById("projects");
 let teaching = document.getElementById("teaching");
-let other = document.getElementById("other");
+let other = document.getElementById("links");
 
 let articles = [about, projects, teaching, other];
 
-window.onload(show_article("about"));
+window.onload = show_article("about");
 
 function hide_articles() {
   for (i = 0; i < articles.length; i++) {
@@ -20,5 +21,11 @@ function show_article(article_name) {
 
   let article = document.getElementById(article_name);
   article.style.opacity = "1.0";
-  article.style.height = "100%";
+  article.style.height = "auto";
+
+  container.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 }

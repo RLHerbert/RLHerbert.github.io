@@ -44,7 +44,7 @@ footer {
     /*  */
 }
 
-article {
+#bg_foreground>article {
     z-index: 2;
 
     display: flex;
@@ -176,10 +176,12 @@ nav #tag {
     
     flex-grow: 1;
 
+    min-height: 0px;
+
     background-color: white;
     color: #101217;
 
-    padding-top: 5px;
+    padding-top: 15px;
     overflow: hidden;
 }
 

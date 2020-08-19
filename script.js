@@ -22,8 +22,8 @@ function show_article(article_name) {
 
   let article = document.getElementById(article_name);
   article.style.opacity = "1.0";
-  article.style.position = "static";
   article.style.zIndex = 3;
+  article.style.position = "static";
 
   article.scroll({
     top: 0,

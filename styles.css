@@ -203,6 +203,8 @@ nav .button {
 
     margin-top: 5px;
 
+    overflow: hidden;
+
     transition: 0.5s;
 }
 
@@ -235,6 +237,8 @@ a {
     background-color: white;
     color: #101217;
 
+    overflow: hidden;
+    
     text-decoration: none;
 
     transition: height 0s, width 0s;

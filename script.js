@@ -12,7 +12,7 @@ function hide_articles() {
   for (i = 0; i < articles.length; i++) {
     articles[i].style.opacity = "0.0";
     articles[i].style.zIndex = -1;
-    articles[i].style.position = "fixed";
+    articles[i].style.position = "absolute";
   }
 }
 

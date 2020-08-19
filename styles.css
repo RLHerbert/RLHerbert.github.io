@@ -50,9 +50,7 @@ footer {
     display: flex;
     flex-direction: column;
 
-    /* height: 86vh; */
     width: 80vw;
-    /* top: 5vh; */
     max-width: 800px;
     border: solid;
     border-color: white;
@@ -214,14 +212,14 @@ nav .button:hover {
     backdrop-filter: blur(0px);
 }
 
-#links {
+#links section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     flex-wrap: wrap;
 }
 
-a {
+#links a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,21 +231,27 @@ a {
     max-height: 240px;
     border-radius: 5px;
     /* box-sizing: border-box; */
+    /* border-style: solid; */
+    /* border-width: 5px; */
+    /* border-color: white; */
 
     margin: 5px;
+    margin-right: auto;
 
     background-color: white;
     color: #101217;
-
-    overflow: hidden;
     
+    font-size: 24px;
     text-decoration: none;
+    
+    overflow: hidden;
 
+    /* transition: 0.5s; */
     transition: height 0s, width 0s;
 }
 
-a:hover {
-    
+#links a:hover { 
+    text-decoration: underline;
 }
 
 h1 {

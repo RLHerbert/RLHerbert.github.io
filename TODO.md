@@ -1,4 +1,3 @@
-- Fix links flexbox
 - Fill in context (create layout)
 - Blog stuff
 - Project Stuff

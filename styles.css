@@ -1,7 +1,5 @@
 body {
-    /*Properties*/
     z-index: 0;
-    /* display: flex; */
     position: fixed;
     
     background-color: #101217;
@@ -15,11 +13,9 @@ body {
     color: white;
     text-align: center;
     
-    /* scrollbar-width: 0px; */
 }
 
 #bg_foreground {
-    /* */
     position: fixed;
 
     display: flex;
@@ -27,10 +23,8 @@ body {
     justify-content: center;
     align-items: center;
 
-    /*  */
     width: 100vw;
     height: 100vh;
-    /*  */
     background-image: url("Media/Images/bg.svg");
     background-attachment: fixed;
     background-size: cover;
@@ -42,6 +36,7 @@ header {
 
 footer {
     /*  */
+    background-color: transparent;
 }
 
 #bg_foreground>article {
@@ -63,8 +58,6 @@ footer {
     padding: 15px;
     overflow: hidden;
 
-    /* text-align: center; */
-
     backdrop-filter: blur(4px);
 }
 
@@ -73,13 +66,9 @@ section section {
 }
 
 @media (orientation: landscape) {
-    #bg_foreground {
-        /* align-items: center; */
-    }
     article {
         height: 92vh;
         font-size: 20px;
-
     }  
     nav {
         height: 92vh;
@@ -111,6 +100,7 @@ section {
     scrollbar-width: none;
     
     transition: opacity 0.5s;
+    transition-delay: position 0.5s;
 }
 
 .content::-webkit-scrollbar {
@@ -132,8 +122,9 @@ img {
     width: 50%;
 }
 
-.post {
-    
+.post a {
+    color: white;
+    text-decoration: underline;
 }
 
 #portrait {
@@ -190,8 +181,6 @@ nav #tag {
     background-color: white;
     color: #101217;
 
-    /* text-align: center; */
-
     padding-top: 15px;
     overflow: hidden;
 }
@@ -223,12 +212,13 @@ nav .button {
 
 nav .button:hover {
     backdrop-filter: blur(0px);
+
+    text-decoration: underline;
 }
 
 #links section {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     flex-wrap: wrap;
 }
 
@@ -243,10 +233,10 @@ nav .button:hover {
     height: 24vw;
     max-height: 240px;
     border-radius: 5px;
-    /* box-sizing: border-box; */
-    /* border-style: solid; */
-    /* border-width: 5px; */
-    /* border-color: white; */
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
 
     margin: 5px;
     margin-right: auto;
@@ -259,16 +249,26 @@ nav .button:hover {
     
     overflow: hidden;
 
-    /* transition: 0.5s; */
-    transition: height 0s, width 0s;
+    transition: .5s;
 }
 
 #links a:hover { 
-    text-decoration: underline;
+    background-color: transparent;
+    color: white;
+}
+
+#links a svg {
+    width: 50%;
+
+    transition: 0.5s;
+}
+
+#links a:hover svg {
+    stroke: white;
 }
 
 h1 {
-    /*  */
+    color: white;
 }
 
 h2 {
@@ -277,6 +277,5 @@ h2 {
 }
 
 h3 {
-    /*  */
-    
+    color: white;
 }

@@ -55,7 +55,9 @@ footer {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* padding-right: 15px; */
     overflow: hidden;
 
     backdrop-filter: blur(4px);
@@ -90,8 +92,14 @@ section {
 }
 
 .content {
+    position: absolute;
+    
     width: 100%;
     height: 100%;
+
+    /* margin: 15px; */
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
 
     opacity: 0.0;
 
@@ -107,13 +115,14 @@ section {
 }
 
 .content section {
-    position: inherit;
-    left: 15px;
-    
-    width: 100%;
+    position: static;
 
+    width: calc(100% - 30px);
+
+    margin-left: 15px;
+    /* margin-right: 15px; */
+    
     opacity: inherit;
-    transition: 1s;
 }
 
 

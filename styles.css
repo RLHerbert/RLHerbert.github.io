@@ -260,7 +260,7 @@ nav .button:hover {
     border-color: white;
 
     margin: 5px;
-    margin-right: auto;
+    /* margin-right: auto; */
 
     background-color: white;
     color: #101217;
